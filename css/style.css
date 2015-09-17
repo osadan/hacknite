@@ -1,0 +1,27 @@
+.center{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+nav.main-nev {
+	margin-top:50px;
+}
+div.generator-wrapper{
+	
+	height:70vh;
+}
+div.generator-part-container{
+	flex-grow:1;
+	border:2px solid #2f5;
+	height:65vh;
+}
+
+div.button-container{
+	height:100%;
+}
+
+div.button-inner {
+	padding:10px 20px;
+	border:1px solid black;
+	border-radius:50%;
+}

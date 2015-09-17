@@ -5,7 +5,7 @@ import {Http} from "angular2/http";
 const REPOS = `https://api.github.com/users/angular/repos`;
 
 @Component({
-    selector: "repo-list"
+    selector: "repo-list" 
 })
 @View({
     directives: [NgFor],

@@ -8,10 +8,12 @@ import {bind, Injectable} from "angular2/di";
 
 import Home from "./home";
 import RepoList from "./repo-list";
+import Generator from "./generator";
 
 @RouteConfig([
     {path: '/', as: "home", component:Home},
     {path: '/repo-list', as: "repo-list", component:RepoList},
+    {path: '/generator' as: 'generator' , component:Generator}
 ])
 @Component({
     selector: "app"
@@ -19,9 +21,11 @@ import RepoList from "./repo-list";
 @View({
     directives: [CORE_DIRECTIVES, RouterOutlet, RouterLink],
     template: `
-        <nav>
+        <nav class='main-nev'>
             <a [router-link]="['/home']">Home</a>
             <a [router-link]="['/repo-list']">Repo List</a>
+            <a [router-link]="['/generator']">Generator</a>
+            
         </nav>
         <main>
             <router-outlet></router-outlet>
