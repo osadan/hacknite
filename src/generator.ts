@@ -2,6 +2,7 @@
 import { Component, View, bootstrap,CORE_DIRECTIVES} from "angular2/angular2";
 import {Http} from "angular2/http";
 import {ButtonComponent} from "./components/button";
+import {PropertiesComponent} from "./components/properties"
 
 
 @Component({
@@ -9,12 +10,13 @@ import {ButtonComponent} from "./components/button";
 })
 //
 @View({
-    directives : [ButtonComponent],
+    directives : [ButtonComponent,PropertiesComponent],
     template   : `  <div class='generator-wrapper center'>
                         <div class='generator-part-container'>
                             <button-component />
                         </div>
                         <div class='generator-part-container'>
+                            <properties-component />
                         </div>
                     </div>`
 })

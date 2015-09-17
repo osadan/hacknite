@@ -1,7 +1,9 @@
 import { Component, View, bootstrap} from "angular2/angular2";
+import {PropertiesService} from "/src/services/properties";
 
 @Component({
-	selector : 'button-component'
+	selector : 'button-component',
+	bindings : [PropertiesService]
 })
 
 	//
@@ -9,10 +11,10 @@ import { Component, View, bootstrap} from "angular2/angular2";
 	templateUrl : './src/templates/button.tpl.html'
 })
 
-export  class ButtonComponent {
+export class ButtonComponent {
 	
-	constructor(){
+	constructor(t:PropertiesService){
 		console.log('button component constructor');
-		this.text = 'Insert text here';
+		this.text = t.getProperty('text');
 	}
 }

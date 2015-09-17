@@ -23,5 +23,5 @@ export default class RepoList {
         http.get(REPOS).toRx().subscribe(
                 res => this.repos = res.json()
         )
-    }
+    }   
 }

@@ -16,7 +16,8 @@ div.generator-part-container{
 	height:65vh;
 }
 
-div.button-container{
+div.button-container,
+div.properties-container{
 	height:100%;
 }
 
